@@ -1,0 +1,712 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8fafc;
+    color:#1e293b;
+    overflow-x:hidden;
+    line-height:1.6;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+section{
+    position:relative;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    padding:18px 8%;
+    background:rgba(255,255,255,0.95);
+    backdrop-filter:blur(15px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 4px 20px rgba(0,0,0,0.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo-section{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-section img{
+    width:65px;
+}
+
+.logo-section h2{
+    color:#2BAE66;
+    font-size:24px;
+    font-weight:700;
+}
+
+.logo-section span{
+    font-size:12px;
+    color:#64748b;
+    letter-spacing:1px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#1e293b;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#2BAE66;
+}
+
+.nav-btn{
+    background:#2BAE66;
+    color:white;
+    border:none;
+    padding:12px 28px;
+    border-radius:50px;
+    cursor:pointer;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.nav-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(43,174,102,.3);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.doctor-hero{
+    height:85vh;
+    background:
+    linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)
+    ),
+    url('https://images.unsplash.com/photo-1584515933487-779824d29309?w=2000&q=80')
+    center center/cover no-repeat;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    width:80%;
+    max-width:900px;
+    animation:fadeUp 1s ease;
+}
+
+.hero-content h1{
+    color:white;
+    font-size:70px;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    color:white;
+    font-size:22px;
+    line-height:1.8;
+}
+
+/* =========================
+   SEARCH SECTION
+========================= */
+
+.search-section{
+    padding:70px 8% 25px;
+    display:flex;
+    justify-content:center;
+}
+
+.search-box{
+    width:800px;
+    display:flex;
+    background:white;
+    border-radius:60px;
+    overflow:hidden;
+    box-shadow:0 10px 35px rgba(0,0,0,0.08);
+}
+
+.search-box input{
+    flex:1;
+    border:none;
+    outline:none;
+    padding:20px 30px;
+    font-size:16px;
+}
+
+.search-box button{
+    width:90px;
+    border:none;
+    background:#2BAE66;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.search-box button:hover{
+    background:#228B57;
+}
+
+/* =========================
+   FILTER SECTION
+========================= */
+
+.filter-section{
+    padding:20px 8% 60px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.filter-btn{
+    padding:14px 28px;
+    border:none;
+    border-radius:40px;
+    background:white;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.filter-btn:hover,
+.filter-btn.active{
+    background:#2BAE66;
+    color:white;
+    transform:translateY(-2px);
+}
+
+/* =========================
+   DOCTORS SECTION
+========================= */
+
+.doctors-section{
+    padding:20px 8% 120px;
+}
+
+.doctor-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+    gap:35px;
+}
+
+.doctor-card{
+    background:white;
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.doctor-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 50px rgba(43,174,102,.15);
+}
+
+.doctor-card img{
+    width:100%;
+    height:340px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.doctor-card:hover img{
+    transform:scale(1.05);
+}
+
+.doctor-info{
+    padding:30px;
+}
+
+.doctor-info h3{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.doctor-info span{
+    display:inline-block;
+    color:#2BAE66;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.doctor-info p{
+    color:#64748b;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.details{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+    font-size:14px;
+    color:#475569;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.details i{
+    color:#2BAE66;
+    margin-right:5px;
+}
+
+.book-btn{
+    width:100%;
+    border:none;
+    background:#2BAE66;
+    color:white;
+    padding:15px;
+    border-radius:50px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.book-btn:hover{
+    background:#228B57;
+    transform:translateY(-2px);
+}
+
+/* =========================
+   CTA SECTION
+========================= */
+
+.cta-section{
+    padding:120px 8%;
+    text-align:center;
+    background:
+    linear-gradient(
+        135deg,
+        #2BAE66,
+        #76c893
+    );
+    color:white;
+}
+
+.cta-section h2{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.cta-section p{
+    font-size:20px;
+    margin-bottom:35px;
+}
+
+.cta-section button{
+    border:none;
+    background:white;
+    color:#2BAE66;
+    padding:18px 40px;
+    border-radius:50px;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.cta-section button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(255,255,255,.3);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#0f172a;
+    color:white;
+    padding-top:70px;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:50px;
+    padding:0 8% 60px;
+}
+
+.footer-about p{
+    margin-top:15px;
+    color:#cbd5e1;
+}
+
+.footer-links ul{
+    list-style:none;
+    margin-top:15px;
+}
+
+.footer-links li{
+    margin-bottom:12px;
+}
+
+.footer-links a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#2BAE66;
+}
+
+.social-icons{
+    margin-top:15px;
+}
+
+.social-icons a{
+    color:white;
+    text-decoration:none;
+}
+
+.social-icons i{
+    font-size:26px;
+    margin-right:18px;
+    transition:.3s;
+}
+
+.social-icons i:hover{
+    color:#2BAE66;
+    transform:translateY(-5px);
+}
+
+.footer-bottom{
+    text-align:center;
+    padding:25px;
+    border-top:1px solid rgba(255,255,255,.1);
+    color:#cbd5e1;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.doctor-card,
+.search-box,
+.filter-section,
+.cta-section{
+    animation:fadeUp .8s ease;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablets */
+@media screen and (max-width: 992px){
+
+    .navbar{
+        padding:15px 5%;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:18px;
+    }
+
+    .doctor-hero{
+        height:75vh;
+        padding:0 5%;
+    }
+
+    .hero-content h1{
+        font-size:54px;
+    }
+
+    .hero-content p{
+        font-size:19px;
+    }
+
+    .search-section,
+    .filter-section,
+    .doctors-section,
+    .cta-section{
+        padding-left:5%;
+        padding-right:5%;
+    }
+
+    .search-box{
+        width:100%;
+        max-width:900px;
+    }
+
+    .doctor-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .cta-section h2{
+        font-size:42px;
+    }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 768px){
+
+    .navbar{
+        padding:14px 5%;
+    }
+
+    .logo-section{
+        flex-direction:column;
+        text-align:center;
+        gap:8px;
+    }
+
+    .logo-section img{
+        width:55px;
+    }
+
+    .logo-section h2{
+        font-size:22px;
+    }
+
+    .nav-links{
+        width:100%;
+        justify-content:center;
+        gap:12px;
+    }
+
+    .nav-links a{
+        font-size:14px;
+    }
+
+    .nav-btn{
+        width:100%;
+        max-width:250px;
+    }
+
+    .doctor-hero{
+        height:65vh;
+        padding:0 5%;
+    }
+
+    .hero-content{
+        width:100%;
+    }
+
+    .hero-content h1{
+        font-size:42px;
+        line-height:1.2;
+    }
+
+    .hero-content p{
+        font-size:16px;
+        line-height:1.7;
+    }
+
+    .search-section{
+        padding:50px 5% 20px;
+    }
+
+    .search-box{
+        flex-direction:column;
+        border-radius:20px;
+        overflow:hidden;
+    }
+
+    .search-box input{
+        padding:18px 20px;
+    }
+
+    .search-box button{
+        width:100%;
+        height:55px;
+    }
+
+    .filter-section{
+        padding:20px 5% 50px;
+        justify-content:center;
+    }
+
+    .filter-btn{
+        padding:12px 20px;
+        font-size:14px;
+    }
+
+    .doctors-section{
+        padding:20px 5% 80px;
+    }
+
+    .doctor-container{
+        grid-template-columns:1fr;
+    }
+
+    .doctor-card img{
+        height:280px;
+    }
+
+    .doctor-info{
+        padding:25px;
+    }
+
+    .doctor-info h3{
+        font-size:24px;
+    }
+
+    .doctor-info p{
+        font-size:15px;
+    }
+
+    .details{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:12px;
+    }
+
+    .book-btn{
+        padding:14px;
+    }
+
+    .cta-section{
+        padding:70px 5%;
+    }
+
+    .cta-section h2{
+        font-size:34px;
+    }
+
+    .cta-section p{
+        font-size:17px;
+    }
+
+    .cta-section button{
+        width:100%;
+        max-width:300px;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+        text-align:center;
+        padding:0 5% 50px;
+    }
+
+    .social-icons{
+        display:flex;
+        justify-content:center;
+        gap:18px;
+    }
+
+    .social-icons i{
+        margin-right:0;
+    }
+}
+
+
+/* Small Phones */
+@media screen and (max-width: 480px){
+
+    .doctor-hero{
+        height:60vh;
+    }
+
+    .hero-content h1{
+        font-size:34px;
+    }
+
+    .hero-content p{
+        font-size:15px;
+    }
+
+    .search-box input{
+        font-size:14px;
+    }
+
+    .doctor-card{
+        border-radius:22px;
+    }
+
+    .doctor-card img{
+        height:240px;
+    }
+
+    .doctor-info{
+        padding:20px;
+    }
+
+    .doctor-info h3{
+        font-size:21px;
+    }
+
+    .doctor-info span{
+        font-size:14px;
+    }
+
+    .details{
+        font-size:13px;
+    }
+
+    .cta-section h2{
+        font-size:28px;
+    }
+
+    .cta-section p{
+        font-size:15px;
+    }
+
+    .footer-bottom{
+        font-size:14px;
+        padding:18px;
+    }
+}

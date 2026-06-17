@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Doctors | Platinum Wings Solutions</title>
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/doctors.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo-section">
+
+                <img src="../RESOURCES/PWS Logo.png" alt="PWS Logo">
+
+                <div>
+                    <h2>PLATINUM WINGS</h2>
+                    <span>Hospital Registration Services</span>
+                </div>
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./doctors.html">Doctors</a></li>
+                <li><a href="./ai-assistant.html">AI Assistant</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+
+            </ul>
+
+            <button onclick="window.location.href='./login.html'" class="nav-btn">
+                Login
+            </button>
+
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <section class="doctor-hero">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <h1>Find Expert Doctors</h1>
+
+            <p>
+                Connect with experienced healthcare specialists
+                for faster consultations and better treatment.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- SEARCH SECTION -->
+
+    <section class="search-section">
+
+        <div class="search-box">
+
+            <input type="text"
+                id="searchInput"
+                placeholder="Search Doctor or Specialization">
+
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- FILTER SECTION -->
+
+    <section class="filter-section">
+
+        <button class="filter-btn active" data-filter="all">
+            All
+        </button>
+
+        <button class="filter-btn" data-filter="cardiologist">
+            Cardiologist
+        </button>
+
+        <button class="filter-btn" data-filter="dentist">
+            Dentist
+        </button>
+
+        <button class="filter-btn" data-filter="neurologist">
+            Neurologist
+        </button>
+
+        <button class="filter-btn" data-filter="general">
+            General Physician
+        </button>
+
+    </section>
+
+    <!-- DOCTORS SECTION -->
+
+    <section class="doctors-section">
+
+        <div class="doctor-container">
+
+            <!-- DOCTOR 1 -->
+
+            <div class="doctor-card cardiologist">
+
+                <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=1000&q=80"
+                    alt="Doctor">
+
+                <div class="doctor-info">
+
+                    <h3>Dr. Rajesh Kumar</h3>
+
+                    <span>Cardiologist</span>
+
+                    <p>
+                        12+ years of experience in heart care and cardiac treatments.
+                    </p>
+
+                    <div class="details">
+
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            4.9 Rating
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-clock"></i>
+                            10 AM - 4 PM
+                        </div>
+
+                    </div>
+
+                    <button class="book-btn">
+                        Book Appointment
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- DOCTOR 2 -->
+
+            <div class="doctor-card dentist">
+
+                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=1000&q=80"
+                    alt="Doctor">
+
+                <div class="doctor-info">
+
+                    <h3>Dr. Priya Sharma</h3>
+
+                    <span>Dentist</span>
+
+                    <p>
+                        Specialist in dental surgery and cosmetic dental care.
+                    </p>
+
+                    <div class="details">
+
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            4.8 Rating
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-clock"></i>
+                            11 AM - 6 PM
+                        </div>
+
+                    </div>
+
+                    <button class="book-btn">
+                        Book Appointment
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- DOCTOR 3 -->
+
+            <div class="doctor-card neurologist">
+
+                <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=1000&q=80"
+                    alt="Doctor">
+
+                <div class="doctor-info">
+
+                    <h3>Dr. Arjun Reddy</h3>
+
+                    <span>Neurologist</span>
+
+                    <p>
+                        Expert in brain and nervous system related treatments.
+                    </p>
+
+                    <div class="details">
+
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            4.7 Rating
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-clock"></i>
+                            9 AM - 3 PM
+                        </div>
+
+                    </div>
+
+                    <button class="book-btn">
+                        Book Appointment
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- DOCTOR 4 -->
+
+            <div class="doctor-card general">
+
+                <img src="https://i.pinimg.com/736x/77/de/c5/77dec56d3f345a9f2c2cfe0a4bee60dd.jpg"
+                    alt="Doctor">
+
+                <div class="doctor-info">
+
+                    <h3>Dr. Sneha Patel</h3>
+
+                    <span>General Physician</span>
+
+                    <p>
+                        Providing general healthcare and family medical consultations.
+                    </p>
+
+                    <div class="details">
+
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            4.9 Rating
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-clock"></i>
+                            8 AM - 2 PM
+                        </div>
+
+                    </div>
+
+                    <button class="book-btn">
+                        Book Appointment
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- DOCTOR 5 -->
+
+            <div class="doctor-card cardiologist">
+
+                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=1000&q=80"
+                    alt="Doctor">
+
+                <div class="doctor-info">
+
+                    <h3>Dr. Vivek Menon</h3>
+
+                    <span>Cardiologist</span>
+
+                    <p>
+                        Specialized in advanced heart diagnostics and treatments.
+                    </p>
+
+                    <div class="details">
+
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            4.8 Rating
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-clock"></i>
+                            1 PM - 7 PM
+                        </div>
+
+                    </div>
+
+                    <button class="book-btn">
+                        Book Appointment
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- DOCTOR 6 -->
+
+            <div class="doctor-card dentist">
+
+                <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=1000&q=80"
+                    alt="Doctor">
+
+                <div class="doctor-info">
+
+                    <h3>Dr. Kavya Rao</h3>
+
+                    <span>Dentist</span>
+
+                    <p>
+                        Expertise in smile designing and advanced dental procedures.
+                    </p>
+
+                    <div class="details">
+
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            4.7 Rating
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-clock"></i>
+                            12 PM - 5 PM
+                        </div>
+
+                    </div>
+
+                    <button class="book-btn">
+                        Book Appointment
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CTA -->
+
+    <section class="cta-section">
+
+        <h2>
+            Get Expert Healthcare Consultation Today
+        </h2>
+
+        <p>
+            Book appointments instantly with trusted healthcare specialists.
+        </p>
+
+        <button onclick="window.location.href='./login.html'">
+            Explore More Doctors
+        </button>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-about">
+
+                <h3>Platinum Wings Solutions</h3>
+
+                <p>
+                    Smart healthcare platform providing AI-powered healthcare,
+                    appointments, emergency support, and patient care solutions.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./doctors.html">Doctors</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-social">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Platinum Wings Solutions. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- JS -->
+
+    <script src="../JS/doctors.js"></script>
+
+</body>
+
+</html>

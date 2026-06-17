@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Assistant | Platinum Wings Solutions</title>
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/ai-assistant.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo-section">
+
+                <img src="../RESOURCES/PWS Logo.png" alt="PWS Logo">
+
+                <div>
+                    <h2>PLATINUM WINGS</h2>
+                    <span>Hospital Registration Services</span>
+                </div>
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./doctors.html">Doctors</a></li>
+                <li><a href="./ai-assistant.html">AI Assistant</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+
+            </ul>
+
+            <button onclick="window.location.href='./login.html'" class="nav-btn">
+                Login
+            </button>
+
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <section class="ai-hero">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <h1>AI Healthcare Assistant</h1>
+
+            <p>
+                Ask healthcare-related questions, get smart assistance,
+                appointment guidance, and healthcare support instantly.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- AI CHAT SECTION -->
+
+    <section class="chat-section">
+
+        <div class="chat-container">
+
+            <!-- CHAT HEADER -->
+
+            <div class="chat-header">
+
+                <div class="assistant-info">
+
+                    <div class="assistant-icon">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>Platinum AI Assistant</h3>
+
+                        <span>
+                            <i class="fa-solid fa-circle"></i>
+                            Online
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CHAT BODY -->
+
+            <div class="chat-body" id="chatBody">
+
+                <div class="message bot-message">
+
+                    <p>
+                        👋 Hello! Welcome to Platinum Wings Solutions.
+                    </p>
+
+                </div>
+
+                <div class="message bot-message">
+
+                    <p>
+                        I can help with doctor recommendations,
+                        appointment guidance, medical terminology,
+                        healthcare services, and general health information.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- CHAT INPUT -->
+
+            <div class="chat-input-area">
+
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Ask your healthcare question...">
+
+                <button id="sendBtn">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURES SECTION -->
+
+    <section class="features-section">
+
+        <h2>AI Assistant Features</h2>
+
+        <p class="section-subtitle">
+            Designed to provide fast, intelligent, and patient-friendly healthcare support.
+        </p>
+
+        <div class="features-container">
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-stethoscope"></i>
+
+                <h3>Health Guidance</h3>
+
+                <p>
+                    Get smart healthcare suggestions and basic guidance.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+                <h3>Appointment Suggestions</h3>
+
+                <p>
+                    AI can help users decide which specialist to consult.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-file-medical"></i>
+
+                <h3>Report Understanding</h3>
+
+                <p>
+                    Explain medical terms and reports in simple language.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-bell"></i>
+
+                <h3>Health Reminders</h3>
+
+                <p>
+                    Medication reminders and appointment notifications.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- BENEFITS SECTION -->
+
+    <section class="benefits-section">
+
+        <div class="benefits-left">
+
+            <h2>Why Use Our AI Assistant?</h2>
+
+            <p>
+                Our AI Assistant is designed to provide immediate healthcare support,
+                reduce confusion, and guide patients toward the right healthcare services.
+            </p>
+
+            <ul>
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    Instant responses 24/7
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    Smart healthcare recommendations
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    Appointment assistance
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    Medical report explanations
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    User-friendly healthcare support
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="benefits-right">
+
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80"
+                alt="AI Healthcare">
+
+        </div>
+
+    </section>
+
+    <!-- CTA SECTION -->
+
+    <section class="cta-section">
+
+        <h2>
+            Experience AI-Powered Healthcare Support
+        </h2>
+
+        <p>
+            Faster answers, smarter healthcare guidance, and better patient experiences.
+        </p>
+
+        <button onclick="window.location.href='./login.html'">
+            Start Chatting
+        </button>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-about">
+
+                <h3>Platinum Wings Solutions</h3>
+
+                <p>
+                    AI-powered healthcare platform delivering smart
+                    healthcare experiences and instant support.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./doctors.html">Doctors</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-social">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Platinum Wings Solutions. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- JS -->
+
+    <script src="../JS/ai-assistant.js"></script>
+
+</body>
+
+</html>
