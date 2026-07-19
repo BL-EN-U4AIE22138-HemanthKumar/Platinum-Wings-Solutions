@@ -55,14 +55,14 @@ cards.forEach(card => {
 
 // BUTTON ACTION
 
-const buttons = document.querySelectorAll(".service-card button");
+// const buttons = document.querySelectorAll(".service-card button");
 
-buttons.forEach(button => {
+// buttons.forEach(button => {
 
-    button.addEventListener("click", () => {
+//     button.addEventListener("click", () => {
 
-        alert("Service Details Coming Soon!");
+//         alert("Service Details Coming Soon!");
 
-    });
+//     });
 
-});
+// });
